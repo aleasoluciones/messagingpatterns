@@ -1,0 +1,6 @@
+1 agent at each datacenter
+agent execute commands and returns the response including a id given in the command and The agent id
+a command broker Send command a process response
+each command broker create a exchange for the responses 
+the command broker is monothread and not concurrent so each response exchange is exlusive
+the command broker accept pairs of command and agent id, and themaximun time to wait, It send all commands including his Exchange
